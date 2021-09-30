@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header{
+    text-align: center;
+margin-top: 2rem;
+font-size: 3rem;
+}
+
+.todo-list{
+    width: 800px;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+
+.todo-lists{
+    display: inline-block;
+    color: black;
+    justify-content:space-between;
+    margin-top: 2rem;
+    width: 100px;
+}
+
+
+#todolist-header{
+    width: 800px;
+    height: 50px;
+    margin-left: 200px;
+    margin-top: 3rem;
+}
+#todolist-header::placeholder{
+    font-weight: 200;
+    font-size: 1.6rem;
+}
+
+.todo-list-items{
+    margin-left: 2rem;
+}
+
+.todo-list-item td{
+    text-align: center;
+}
+.delete{
+opacity:0;
+
+margin-bottom: 1rem;
+margin-left:2rem;
+text-align: center;
+padding-top: 2px;
+
+text-decoration: none;
+color: red;
+transition: opacity 1s ease-in-out;
+}
+
+.todo-enter{
+height:40px;
+width:80px;
+margin-left:2rem;
+text-align: center;
+padding-top: 2px;
+border-radius: 5px;
+background-color: burlywood;
+color: green;
+
+}
+.todo-enter:hover{
+    color: red;
+}
+.mark-complete{
+    margin-left: 2rem;
+    display: inline-block;
+}
+
+.filter{
+    display: flex;
+    margin-top: 3rem;
+}
+.filter-items{
+    margin-left: 1rem;
+    text-decoration: none;
+    color: black;
+    font-weight:100;
+    font-family: Roboto, sans-serif;
+}
+
+.list-item:hover > .delete{
+opacity:1
+
+}
+
+.span-filter{
+    margin-left: 1rem;
+   
+    color: black;
+    font-weight:100;
+    font-family: Roboto, sans-serif;
+    
+
+}
+.completed1{
+    display: none;
+}
